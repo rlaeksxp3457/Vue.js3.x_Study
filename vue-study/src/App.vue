@@ -7,9 +7,33 @@
     <router-link to="/databindinginputtext"
       >Data Binding Input Text</router-link
     >
-    <router-view />
+    | <router-link to="/databindingselect"> databindingselect </router-link> |
+    <router-link to="/databindingcheckbox"> databindingcheckbox </router-link> |
+    <router-link to="/databindingcheckbox2"> databindingcheckbox2 </router-link>
+    | <router-link to="/databindingradio"> databindingradio </router-link> |
+    <router-link to="/databindingattribue"> databindingattribue</router-link> |
+    <router-link to="/databindingbutton">databindingbutton</router-link> |
+    <router-link to="/databindingclass">databindingclass</router-link>
+
+    <router-view></router-view>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      item: [
+        {
+          name: "button1",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+
 
 <style>
 #app {
